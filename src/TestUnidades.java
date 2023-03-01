@@ -12,7 +12,7 @@ public class TestUnidades {
 		//Moneda m3 = new Moneda("Dolar Est", "USD", 201);
 		
 		ConversorMoneda cm = new ConversorMoneda();
-		System.out.println(cm.getConversionesDisponibles());
+		//System.out.println(cm.getConversionesDisponibles());
 		
 		
 		
