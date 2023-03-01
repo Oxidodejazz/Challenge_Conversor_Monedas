@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 public class MenuPrincipal {
@@ -10,12 +12,14 @@ public class MenuPrincipal {
 	//constructor
 	MenuPrincipal () {
 		
+				Icon icono = new ImageIcon(getClass().getResource("/img/LogoAlura.png"));
+				
 				Object seleccion = JOptionPane.showInputDialog(
 				   null, 
 				   "Seleccione una opción de conversión",
 				   "Menú",
 				   JOptionPane.PLAIN_MESSAGE,
-				   null,  // null para icono por defecto
+				   icono, 
 				   opcionesConversion.toArray(),
 				   "opcion 1");
 
@@ -31,6 +35,9 @@ public class MenuPrincipal {
 						case "Conversor de moneda":
 						//new MenuConversorMoneda();
 						System.out.println("El usuario eligió moneda");
+						ConversorMoneda c = new ConversorMoneda();
+						
+						System.out.println(c.getConversionesDisponibles());
 						break;
 						case "Conversor de temperatura":
 							//new MenuConrversorTemperatura();
