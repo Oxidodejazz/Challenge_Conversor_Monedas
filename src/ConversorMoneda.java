@@ -27,7 +27,7 @@ public class ConversorMoneda {
 		
 		this.generateConversionesDisponibles();
 		
-		System.out.println(this.convertir(m1.getNombre() + " a " + this.unidadLocal.getNombre(), 20000));
+		//System.out.println(this.convertir(m1.getNombre() + " a " + this.unidadLocal.getNombre(), 20000));
 				
 	}
 
@@ -68,7 +68,8 @@ public class ConversorMoneda {
 			while (!(this.codigoConversiones.get(i)[1] == this.unidades.get(i2).getAbreviatura())) {
 				i2++;
 			}
-			return this.unidades.get(i2).getCotizacion() * cantidad;
+			
+			return cantidad / this.unidades.get(i2).getCotizacion();
 		} 
 		// Caso Moneda Origen Extrajera
 		else {
@@ -76,7 +77,8 @@ public class ConversorMoneda {
 			while (!(this.codigoConversiones.get(i)[0] == this.unidades.get(i2).getAbreviatura())) {
 				i2++;
 			}
-			return cantidad / this.unidades.get(i2).getCotizacion();
+			
+			return this.unidades.get(i2).getCotizacion() * cantidad;
 	}
 		
 } 
