@@ -1,8 +1,6 @@
 
-public class Moneda {
+public class Moneda extends Unidad {
 
-	private String nombre;
-	private String abreviatura;
 	private double cotizacion;
 	
 	public Moneda (String nombre, String abreviatura, double cotizacion) {
@@ -10,19 +8,11 @@ public class Moneda {
 		this.abreviatura = abreviatura;
 		this.cotizacion = cotizacion;
 	}
+
 	
-	public String getNombre() {
-		return nombre;
-	}
-	
-	public String getAbreviatura() {
-		return abreviatura;
-	}
-	
-	public double getCotizacion() {
+	public double getCoeficiente() {
+		// TODO Auto-generated method stub
 		return cotizacion;
 	}
-	
-	
 	
 }
