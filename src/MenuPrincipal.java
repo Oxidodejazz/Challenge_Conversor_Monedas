@@ -35,8 +35,8 @@ public class MenuPrincipal {
 						
 							case "Conversor horario":
 								new ConversorHorario();
-								//this.armarMenuUnidad(conversorHorario);
-								mostrarCuadroCerrar();
+								//this.armarMenuUnidad(conversorHorario); Aquí se armará el Menu de Conversor Horario en el futuro.
+								mostrarCuadroCerrar(); // Característica en desarrollo.
 								break;
 						}
 					}
@@ -99,7 +99,7 @@ public class MenuPrincipal {
 	}
 	
 	private void mostrarCuadroCerrar() {
-		
+	// Método para mostrar mensaje de Programa Terminado.	
 		JOptionPane.showMessageDialog(
 			null, 
 			"Programa Terminado",
@@ -118,7 +118,7 @@ public class MenuPrincipal {
 	}
 	
 	private void mostrarError(String cadena) {
-		
+	// Método para mostrar mensajes de error.	
 		JOptionPane.showMessageDialog(
 				null, 
 				cadena,

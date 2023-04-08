@@ -1,7 +1,8 @@
 import javax.swing.JOptionPane;
 
 public class ConversorHorario extends Conversor {
-				
+// Esta funcionalidad está en construcción. 				
+
 	public ConversorHorario() {
 		
 		mostrarEnConstruccion("Esta sección está en construcción");

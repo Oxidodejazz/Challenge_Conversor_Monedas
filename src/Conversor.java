@@ -10,7 +10,6 @@ public abstract class Conversor {
 	// codigoConversiones.get(0)[0]--(index matchea con conversionesDisponibles) [0 Unidad Origen] [1 Unidad Destino]
 	protected ArrayList<Double> coeficienteConversiones = new ArrayList<>(); //Double es wrapper de double
 	
-		
 	// Devuelve una lista con las descripciones de las conversiones dispobibles
 	public ArrayList<String> getConversionesDisponibles() {
 			return this.conversionesDisponibles;
@@ -54,7 +53,4 @@ public abstract class Conversor {
 	public abstract void generateConversionesDisponibles();
 		
 	
-} 
-		
-	
-	
+}

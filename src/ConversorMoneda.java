@@ -21,7 +21,7 @@ public class ConversorMoneda extends Conversor {
 	}
 	
 	// Construye una lista con las descripciones de conversionesDisponibles	
-	// y otro matcheando el (i) con (Origen-Destino) en codigo 
+	// y otra matcheando el (i) con (Origen-Destino) en codigo 
 	@Override
 	public void generateConversionesDisponibles() {
 			
